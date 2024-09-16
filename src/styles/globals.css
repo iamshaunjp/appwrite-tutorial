@@ -1,0 +1,132 @@
+/* globals.css */
+
+/* General Styles */
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: #e5e5e5;
+  margin: 0;
+  padding: 20px 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  margin: 10px auto;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #333;
+  font-weight: 700;
+  position: relative;
+  padding: 10px 0;
+  display: inline-block;
+  border-bottom: 4px solid;
+}
+
+form {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Note Form Styles */
+textarea {
+  width: 100%;
+  max-width: 480px;
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 7px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  display: block;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+textarea:focus {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+button {
+  padding: 12px 24px;
+  border: none;
+  background-color: #05ad6a;
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Note List Styles */
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+  list-style-type: none;
+  margin: 50px auto;
+}
+
+li {
+  background-color: #fffdf5;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 240px;
+  position: relative;
+  transform: rotate(-1deg);
+  transition: transform 0.2s ease;
+}
+
+li:hover {
+  transform: rotate(0deg);
+  cursor: pointer;
+}
+
+li:nth-child(odd) {
+  transform: rotate(1deg);
+}
+
+li:before {
+  content: 'push_pin';
+  font-family: 'Material Icons';
+  position: absolute;
+  top: -15px;
+  right: 10px;
+  color: #e74c3c;
+  font-size: 1.8rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+li.crossed-out {
+  text-decoration: line-through;
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+p {
+  margin: 0;
+  font-size: 1rem;
+  word-wrap: break-word;
+  color: #555;
+  line-height: 1.5;
+}
