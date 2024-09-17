@@ -119,7 +119,6 @@ li:before {
 
 li.crossed-out {
   text-decoration: line-through;
-  opacity: 0;
   transition: all 1s ease;
 }
 
