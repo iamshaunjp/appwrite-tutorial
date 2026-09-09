@@ -1,9 +1,8 @@
-import NewNoteForm from './components/NewNoteForm'
-import NoteList from './components/NoteList'
-import '../styles/globals.css'
+import NewNoteForm from "./components/NewNoteForm";
+import NoteList from "./components/NoteList";
 
 export default async function Home() {
-  const notes: Note[] = []
+  const notes: Note[] = [];
 
   return (
     <div>
